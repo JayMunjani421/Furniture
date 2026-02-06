@@ -160,7 +160,7 @@ const Home = () => {
 
         <Header isFavorited={isFavorited} newProducts={newProducts} newColors={newColors} toggleFavorite={toggleFavorite} />
 
-        <div className="max-w-full px-4 md:px-5 2xl:px-0 bg-[url('src/assets/images/hero.png')] bg-cover bg-center">
+        <div className="max-w-full px-4 md:px-5 2xl:px-0 bg-[url('/images/hero.png')] bg-cover bg-center">
             <div className="max-w-324 w-full mx-auto py-5 xl:py-10 2xl:py-37 flex flex-col md:flex-row items-center gap-4">
                 <div className="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left">
                     <span className="inline-block bg-[#FFFFFF]/10 mb-3 lg:mb-4 xl:mb-5 2xl:mb-10 px-3.5 lg:px-4 py-2 lg:py-2.5 font-dm-sans font-bold text-white text-xs md:text-sm xl:text-base leading-none tracking-wider">Furniture</span>
