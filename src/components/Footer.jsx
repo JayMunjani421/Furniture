@@ -1,15 +1,13 @@
+import { useEffect, useState } from "react";
+import toast, { Toaster, useToasterStore } from "react-hot-toast";
+import Button from "./Button";
 
 import cabinet1 from "../assets/images/cabinet1.svg";
-
 import facebook from "../assets/images/facebook.svg";
 import twitter from "../assets/images/twitter.svg";
 import instagram from "../assets/images/instagram.svg";
 import youtube from "../assets/images/youtube.svg";
-
 import paymenticons from "../assets/images/paymenticons.svg";
-import { useEffect, useState } from "react";
-import Button from "./Button";
-import toast, { Toaster, useToasterStore } from "react-hot-toast";
 
 const Footer = () => {
 
@@ -42,7 +40,9 @@ const Footer = () => {
   }
 
   return (<>
+
     <Toaster position="bottom-right" reverseOrder={false} />
+
     <div className="max-w-full bg-[#F6F4F2] px-4 md:px-5 2xl:px-0">
       <div className="max-w-324 w-full mx-auto  pt-5 xl:pt-10 2xl:pt-15 pb-5 space-y-7 lg:space-y-8 xl:space-y-10 2xl:space-y-20">
 
@@ -65,9 +65,7 @@ const Footer = () => {
         </div>
 
         <div className=" flex flex-wrap lg:flex-row sm:justify-between items-start gap-x-10 gap-y-5">
-
           <div className="flex flex-col items-start gap-3.5 xl:gap-4 2xl:gap-5">
-
             <div className="flex items-center gap-1.5 2xl:gap-2">
               <img src={cabinet1} alt="Cabinet1" className="w-5 xl:w-6 h-5 xl:h-6" />
               <h3 className="font-inter font-bold text-black text-base md:text-lg xl:text-xl 2xl:text-2xl leading-none">f Store</h3>
@@ -91,9 +89,7 @@ const Footer = () => {
                 ))}
               </li>
             </ul>
-
           </div>
-
           <div className="flex flex-col gap-3 xl:gap-4 2xl:gap-5">
             <h3 className="font-inter font-bold text-black text-base md:text-lg xl:text-xl 2xl:text-2xl leading-none">Shop</h3>
             <ul className="flex flex-col gap-1 xl:gap-2">
@@ -104,7 +100,6 @@ const Footer = () => {
               ))}
             </ul>
           </div>
-
           <div className="flex flex-col gap-3 xl:gap-4 2xl:gap-5">
             <h3 className="font-inter font-bold text-black text-base md:text-lg xl:text-xl 2xl:text-2xl leading-none">Customer Services</h3>
             <ul className="flex flex-col gap-1 xl:gap-2">
@@ -115,7 +110,6 @@ const Footer = () => {
               ))}
             </ul>
           </div>
-
           <div className="flex flex-col gap-3 xl:gap-4 2xl:gap-5">
             <h3 className="font-inter font-bold text-black text-base md:text-lg xl:text-xl 2xl:text-2xl leading-none">Delivery</h3>
             <ul className="flex flex-col gap-1 xl:gap-2">
@@ -126,7 +120,6 @@ const Footer = () => {
               ))}
             </ul>
           </div>
-
         </div>
 
         <div className="flex flex-col-reverse sm:flex-row sm:justify-between items-center gap-4">
@@ -136,6 +129,7 @@ const Footer = () => {
 
       </div>
     </div >
+    
   </>);
 };
 
