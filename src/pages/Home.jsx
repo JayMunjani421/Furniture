@@ -188,9 +188,9 @@ const Home = () => {
                     <Button type="button" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} className="font-medium text-black border-black md:hover:bg-black/10" bordered>View all</Button>
                 </div>
 
-                <div className="w-fit mx-auto grid grid-cols-3 sm:grid-cols-5 2xl:grid-cols-4 gap-x-1.5 md:gap-x-2 lg:gap-x-2.5 xl:gap-x-3 2xl:gap-x-6 gap-y-2.5 md:gap-y-3 lg:gap-y-3.5 xl:gap-y-4 2xl:gap-y-8">
+                <div className="grid grid-cols-2 sm:grid-cols-5 2xl:grid-cols-4 gap-x-1.5 md:gap-x-2 lg:gap-x-2.5 xl:gap-x-3 2xl:gap-x-6 gap-y-2.5 md:gap-y-3 lg:gap-y-3.5 xl:gap-y-4 2xl:gap-y-8">
                     {categories.map((item) => (
-                        <div key={item.id} className="max-w-35 md:max-w-40 lg:max-w-45 xl:max-w-55 2xl:max-w-76.5 flex flex-col items-start group cursor-pointer transition-all duration-300 md:hover:-translate-y-1.5">
+                        <div key={item.id} className=" flex flex-col items-start group cursor-pointer transition-all duration-300 md:hover:-translate-y-1.5">
                             <img loading="lazy" src={item.imageurl} alt={item.title} className="w-full h-auto" />
                             <h3 className="mt-1 sm:mt-1.5 md:mt-2 lg:mt-2.5 xl:mt-3 2xl:mt-3.5 mb-0.5 md:mb-1 lg:mb-1.5 xl:mb-2 2xl:mb-2.5 font-dm-sans font-medium text-black text-base md:text-lg xl:text-xl 2xl:text-2xl leading-none">{item.title}</h3>
                             <span className="font-dm-sans font-medium text-black/60 text-xs md:text-sm xl:text-base 2xl:text-xl leading-none">{item.products} products</span>
@@ -212,12 +212,12 @@ const Home = () => {
                     </ul>
                 </div>
 
-                <div className="w-fit mx-auto grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-3 gap-x-1.5 md:gap-x-2 lg:gap-x-2.5 xl:gap-x-3 2xl:gap-x-6 gap-y-2.5 md:gap-y-3 lg:gap-y-3.5 xl:gap-y-4 2xl:gap-y-8">
+                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-3 gap-x-1.5 md:gap-x-2 lg:gap-x-2.5 xl:gap-x-3 2xl:gap-x-6 gap-y-2.5 md:gap-y-3 lg:gap-y-3.5 xl:gap-y-4 2xl:gap-y-8">
                     {displayedProducts.map((newproduct) => {
                         const selectedColorIndex = newColors[newproduct.id] || 0;
                         const currentImage = newproduct.imageurl[selectedColorIndex];
                         return (
-                            <div key={newproduct.id} className="max-w-45 md:max-w-50 lg:max-w-60 xl:max-w-70 2xl:max-w-104">
+                            <div key={newproduct.id} className="">
                                 <div className="relative group cursor-pointer overflow-hidden">
                                     <img loading="lazy" src={currentImage} alt={newproduct.name} className="w-full h-auto transition-transform duration-400 md:group-hover:scale-110" />
                                     {newproduct.tag && (
@@ -318,14 +318,14 @@ const Home = () => {
                     <Button type="button" className="font-medium text-black border-black md:hover:bg-black/10" bordered >View all</Button>
                 </div>
 
-                <div className="w-fit mx-auto grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 2xl:grid-cols-4 gap-x-1.5 md:gap-x-2 lg:gap-x-2.5 xl:gap-x-3 2xl:gap-x-6 gap-y-2.5 md:gap-y-3 lg:gap-y-3.5 xl:gap-y-4 2xl:gap-y-8">
+                <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 2xl:grid-cols-4 gap-x-1.5 md:gap-x-2 lg:gap-x-2.5 xl:gap-x-3 2xl:gap-x-6 gap-y-2.5 md:gap-y-3 lg:gap-y-3.5 xl:gap-y-4 2xl:gap-y-8">
                     {bestSellers.map((bestseller) => {
                         const selectedIndex = bestColors[bestseller.id] || 0;
                         const currentImage = Array.isArray(bestseller.imageurl)
                             ? bestseller.imageurl[selectedIndex]
                             : bestseller.imageurl;
                         return (
-                            <div key={bestseller.id} className="max-w-35 md:max-w-40 lg:max-w-45 xl:max-w-55 2xl:max-w-76.5">
+                            <div key={bestseller.id} className="">
                                 <div className="relative mb-1 sm:mb-1.5 md:mb-2 lg:mb-3 xl:mb-4 2xl:mb-6 group cursor-pointer overflow-hidden">
 
                                     <img loading="lazy" src={currentImage} alt={bestseller.name} className="w-full h-auto transition-transform duration-400 md:group-hover:scale-110" />

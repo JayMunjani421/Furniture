@@ -110,6 +110,33 @@ const Header = ({ isFavorited = [], newProducts = [], newColors = {}, toggleFavo
         </div>
       </div>
 
+      {/* <div className="hidden lg:block max-w-full bg-[#F6F4F2]">
+        <div className="max-w-324 w-full mx-auto py-1.5 2xl:py-5 flex justify-between items-center px-5 2xl:px-0">
+          <span className="font-dm-sans font-medium text-black text-xs xl:text-sm leading-3.5 xl:leading-4.5">60 Fremont Ave. Hamden, CT 06514</span>
+          <div className="max-w-115.5 w-full h-9.5 2xl:h-10.5 pr-3 2xl:pr-4 flex items-center gap-2 bg-white border box-border border-[#DEE2E6] outline-none">
+            <div className="relative flex items-center ">
+              <select value={category} onChange={(e) => setCategory(e.target.value)} className="pl-3 pr-8 py-1 2xl:py-2 font-dm-sans font-medium text-black text-xs xl:text-sm leading-3.5 xl:leading-4.5 bg-transparent appearance-none cursor-pointer outline-none border-r border-[#DEE2E6]">
+                <option value="all">All Categories</option>
+                <option value="electronics">Electronics</option>
+                <option value="fashion">Fashion</option>
+                <option value="home">Home</option>
+              </select>
+              <img src={chevrondown} alt="Chevron Down" className="w-3 2xl:w-4 h-3 2xl:h-4 absolute right-2 pointer-events-none" />
+            </div>
+            <div className="w-full flex items-center gap-2">
+              <input value={query} onChange={(e) => setQuery(e.target.value)} onKeyDown={handleKeyDown} type="text" placeholder="Search product..." className="w-full font-dm-sans font-medium text-black placeholder:text-[#ADB5BD] text-xs xl:text-sm leading-3.5 xl:leading-4.5 outline-none" />
+              <button onClick={handleSearch} className="shrink-0 cursor-pointer hover:opacity-70">
+                <img src={search} alt="Search" className="w-5 2xl:w-6 h-5 2xl:h-6" />
+              </button>
+            </div>
+          </div>
+          <div className="flex items-center gap-3 cursor-pointer">
+            <img src={phonecall} alt="Phone Call" className="w-5 2xl:w-6 h-5 2xl:h-6" />
+            <span className="font-dm-sans font-medium text-black text-xs xl:text-sm leading-3.5 xl:leading-4.5">(928) 630-9272</span>
+          </div>
+        </div>
+      </div> */}
+
       <div className="max-w-full bg-white px-4 md:px-5 2xl:px-0 border-b border-black sticky top-0 z-50">
         <div className="max-w-324 w-full mx-auto py-2 lg:py-3 2xl:py-10 flex justify-between items-center">
           <div className="flex items-center gap-1 x:gap-1.5 2xl:gap-2 cursor-pointer">
