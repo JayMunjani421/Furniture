@@ -403,7 +403,7 @@ const Home = () => {
         </div>
 
         <Footer />
-        
+
     </>);
 };
 
